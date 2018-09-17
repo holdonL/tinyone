@@ -72,7 +72,7 @@ ul {
     padding-right: 10px;
 }
 
-.main-logo {
+.main-header-logo {
     position: relative;
     top: 55px;
     font-size: 30px;
@@ -80,11 +80,11 @@ ul {
     font-weight: 700;
 }
 
-.main-logo a {
+.main-header-logo a {
     padding-left: 51px;
 }
 
-.main-logo::before {
+.main-header-logo::before {
     position: absolute;
     content: "";
     width: 43px;
@@ -94,13 +94,13 @@ ul {
     background-repeat: no-repeat;
 }
 
-.nav-button:last-child {
+.site-navigation-button:last-child {
     margin-right: 0;
 }
 
-.nav-button:hover,
-.nav-button:focus,
-.nav-button:active {
+.site-navigation-button:hover,
+.site-navigation-button:focus,
+.site-navigation-button:active {
     filter: drop-shadow(5px 5px 5px rgba(2, 2, 2, 0.555));
 }
 
