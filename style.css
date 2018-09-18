@@ -1,3 +1,14 @@
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -13,10 +24,6 @@ body {
     line-height: 34px;
     font-weight: 400;
     color: #000000;
-}
-
-section {
-    overflow: hidden;
 }
 
 a {
@@ -82,6 +89,13 @@ ul {
 
 .main-header-logo a {
     padding-left: 51px;
+    color: #000000;
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus,
+.main-header-logo a:active {
+    filter: drop-shadow(5px 5px 5px rgba(2, 2, 2, 0.555));
 }
 
 .main-header-logo::before {
@@ -393,6 +407,7 @@ ul {
     border-radius: 5px;
     border: 1px solid #fcdb00;
     background-color: #fcdb00;
+    cursor: pointer; 
 }
 
 .submit-button:focus,
